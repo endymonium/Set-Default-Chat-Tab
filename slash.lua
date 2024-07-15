@@ -20,7 +20,7 @@ local function handler(msg, editBox)
 
     else
         ns:l("Possible commands:")
-        ns:l("  /sdct get     print current value")
+        ns:l("  /sdct get         print current value")
         ns:l("  /sdct set <idx>   list all chat tabs")
     end
 end
