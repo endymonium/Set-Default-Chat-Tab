@@ -1,6 +1,7 @@
 ## Interface: 110002
 ## Title: Set Default Chat Tab
 ## Notes: This addon automatically sets the active chat tab to a tab of your choosing at login
+## Version: 0.0.1
 ## SavedVariablesPerCharacter: DEFAULT_CHAT_TAB
 
 embeds.xml
