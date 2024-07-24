@@ -61,32 +61,18 @@ local SetDefaultChatTabLDB = LibStub("LibDataBroker-1.1"):NewDataObject(
                             UIDropDownMenu_AddButton(info)
                         end
                     end
-
-                    -- header Debug
-                    local info = UIDropDownMenu_CreateInfo()
-                    info.isTitle = true
-                    info.text = "Debug"
-                    UIDropDownMenu_AddButton(info)
-
-                    local info = UIDropDownMenu_CreateInfo()
-                    info.text = "Test"
-                    info.isNotRadio = true
-                    info.func = function(_, arg1)
-                        ChangeToDefaultTab()
-                    end
-                    UIDropDownMenu_AddButton(info)
                 end, "MENU")
 
                 ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
 
             elseif button == "RightButton" then
-                ReloadUI()
+                ChangeToDefaultTab()
             end
         end,
         OnTooltipShow = function(tooltip)
             tooltip:SetText("Set Default Chat Tab")
             tooltip:AddLine("Left-click to open / close", 1, 1, 1)
-            tooltip:AddLine("Right-click to Reload Ui", 1, 1, 1)
+            tooltip:AddLine("Right-click to test setting", 1, 1, 1)
         end
     })
 local icon = LibStub("LibDBIcon-1.0")
